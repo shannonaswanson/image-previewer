@@ -9,6 +9,9 @@ export const config = {
 }
 
 export default async (req, res) => {
+  if (!fs.existsSync(uploadDir)) {
+    fs.mkdirSync(uploadDir);
+  }
 
   if (req.method === 'GET') {
     const files = fs.readdirSync(uploadDir);
