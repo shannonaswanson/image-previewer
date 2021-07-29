@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageTile  should match snapshot 1`] = `
+<div
+  data-testid="image-tile"
+>
+  <h3
+    className="h3__ImageTitle-sc-2ay7y7-0 hwAtaM"
+    data-testid="image-title"
+  >
+    hello
+  </h3>
+  <img
+    className="imageContainer__ImageContainer-sc-139ry6z-0 cvbhVk"
+    data-testid="image-container"
+    src="world"
+  />
+</div>
+`;

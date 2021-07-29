@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageTiles should match snap shot 1`] = `
+Array [
+  <div
+    data-testid="image-container-0"
+  >
+    <div
+      data-testid="image-tile"
+    >
+      <h3
+        className="h3__ImageTitle-sc-2ay7y7-0 hwAtaM"
+        data-testid="image-title"
+      >
+        hello
+      </h3>
+      <img
+        className="imageContainer__ImageContainer-sc-139ry6z-0 cvbhVk"
+        data-testid="image-container"
+        src="/source/directory/hello"
+      />
+    </div>
+  </div>,
+  <div
+    data-testid="image-container-1"
+  >
+    <div
+      data-testid="image-tile"
+    >
+      <h3
+        className="h3__ImageTitle-sc-2ay7y7-0 hwAtaM"
+        data-testid="image-title"
+      >
+        world
+      </h3>
+      <img
+        className="imageContainer__ImageContainer-sc-139ry6z-0 cvbhVk"
+        data-testid="image-container"
+        src="/source/directory/world"
+      />
+    </div>
+  </div>,
+]
+`;

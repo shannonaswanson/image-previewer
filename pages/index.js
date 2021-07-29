@@ -18,20 +18,20 @@ export default function Home() {
   const [filterText, setFilterText] = useState('');
 
   useEffect(async () => {
-    const _images = await getImages();
+    const _images = await getImages() || [];
     setImages(_images);
   }, []);
 
   const filteredImages = images.filter(image => filterText.length === 0 || image.toLowerCase().indexOf(filterText) > -1);
 
   return (
-    <AppContainer>
+    <AppContainer data-testid='home'>
       <UploadContainer>
-        <input type='text' value={filterText} placeholder='Search Images...' onChange={(e) => setFilterText(e.target.value.toLowerCase())} />
+        <input data-testid='filter-input' type='text' value={filterText} placeholder='Search Images...' onChange={(e) => setFilterText(e.target.value.toLowerCase())} />
         <UploadButton uploadClick={(file) => uploadClick(file, setImages)} accept="image/*" />
       </UploadContainer>
 
-      <TitleContainer>Showing {filteredImages.length} of {images.length} Images</TitleContainer>
+      <TitleContainer data-testid='title-container'>Showing {filteredImages.length} of {images.length} Images</TitleContainer>
       <WrappingContainer>
         <Images images={filteredImages} sourceDirectory='/images' />
       </WrappingContainer>

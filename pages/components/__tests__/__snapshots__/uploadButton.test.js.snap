@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UploadButton Should match snapshot 1`] = `
+<div>
+  <button
+    className="button__Button-sc-1apg6n4-0 iCoJXd"
+    data-testid="upload-button"
+    onClick={[Function]}
+  >
+    Upload
+  </button>
+  <input
+    accept="*.png"
+    data-testid="upload-input"
+    onChange={[Function]}
+    style={
+      Object {
+        "display": "none",
+      }
+    }
+    type="file"
+  />
+</div>
+`;

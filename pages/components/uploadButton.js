@@ -6,8 +6,9 @@ export default function UploadButton({ uploadClick, accept }) {
 
     return (
         <div>
-            <Button onClick={() => fileInput.current.click()}>Upload</Button>
-            <input type="file"
+            <Button data-testid='upload-button' onClick={() => fileInput.current.click()}>Upload</Button>
+            <input data-testid='upload-input'
+                type="file"
                 ref={fileInput}
                 accept={accept}
                 onChange={(e) => {
